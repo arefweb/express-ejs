@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./head'); %>
+  <title>Second</title>
+</head>
+<body>
+  <div class="homePage">
+    <main class="main">
+      <h2>Second Page</h2>
+      <p>Second page corresponding to path: /second !!</p>
+      <ul>
+        <% ['John Dow', 'Sarah Connor', 'Kevin McAllister'].forEach((name) => { %>
+          <li> <%= name %> </li>
+       <% }) %>
+      </ul>
+    </main>
+    <%- include('./asideMenu'); %>
+  </div>
+</body>
+</html>
